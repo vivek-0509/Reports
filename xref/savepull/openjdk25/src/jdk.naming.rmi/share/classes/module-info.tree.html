@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>module-info.tree xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   COMPILATION_UNIT -&gt; COMPILATION_UNIT [70:1]
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   `--MODULE_DEF -&gt; MODULE_DEF [70:1]
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>       |--ANNOTATIONS -&gt; ANNOTATIONS [70:1]
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>       |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [1:1]</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment">    |   |--COMMENT_CONTENT -&gt; \n * Copyright (c) 2014, 2024, Oracle and/or its affiliates. All rights reserved.\n * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.\n *\n * This code is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License version 2 only, as\n * published by the Free Software Foundation.  Oracle designates this\n * particular file as subject to the "Classpath" exception as provided\n * by Oracle in the LICENSE file that accompanied this code.\n *\n * This code is distributed in the hope that it will be useful, but WITHOUT\n * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License\n * version 2 for more details (a copy is included in the LICENSE file that\n * accompanied this code).\n *\n * You should have received a copy of the GNU General Public License version\n * 2 along with this work; if not, write to the Free Software Foundation,\n * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n *\n * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA\n * or visit www.oracle.com if you need additional information or have any\n * questions.\n  [1:3]</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_comment">    |   `--BLOCK_COMMENT_END -&gt; */</em> [24:2]
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>       |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [26:1]</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_comment">    |   |--COMMENT_CONTENT -&gt; *\n * Provides the implementation of the RMI Java Naming provider.\n *\n * @implNote\n * The following implementation specific system properties are supported by the\n * default RMI Naming Service Provider implementation in the JDK:\n * &lt;ul&gt;\n *     &lt;li&gt;{@systemProperty jdk.jndi.object.factoriesFilter}:\n *          &lt;br&gt;The value of this system property defines a filter used by\n *          the JNDI runtime implementation to control the set of object factory classes which will\n *          be allowed to instantiate objects from object references returned by naming/directory systems.\n *          The factory class named by the reference instance will be matched against this filter.\n *          The filter property supports pattern-based filter syntax with the same format as\n *          {@link java.io.ObjectInputFilter.Config#createFilter(String) jdk.serialFilter}. Limit patterns\n *          specified in the filter property are unused.\n *          This property can also be specified as a {@linkplain java.security.Security security property}.\n *          This property is also supported by the &lt;a href="{@docRoot}/java.naming/module-summary.html"&gt;default\n *          LDAP Naming Service Provider&lt;/a&gt;.\n *          &lt;br&gt;The default value allows any object factory class specified by the reference\n *          instance to recreate the referenced object.\n *     &lt;/li&gt;\n *     &lt;li&gt;{@systemProperty jdk.jndi.rmi.object.factoriesFilter}:\n *          &lt;br&gt;The value of this system property defines a filter used by\n *          the JDK RMI provider implementation to further restrict the set of object factory classes which will\n *          be allowed to instantiate objects from object references returned by RMI systems.\n *          The factory class named by the {@linkplain javax.naming.Reference reference instance} first will be\n *          matched against this specific filter and then against the global filter. The factory class is rejected\n *          if any of these two filters reject it, or if none of them allow it.\n *          The filter property supports pattern-based filter syntax with the same format as\n *          {@link java.io.ObjectInputFilter.Config#createFilter(String) jdk.serialFilter}. Limit patterns\n *          specified in the filter property are unused.\n *          &lt;br&gt;The default value allows any object factory class provided by the JDK RMI provider\n *          implementation.\n *     &lt;/li&gt;\n * &lt;/ul&gt;\n * &lt;p&gt; Downloading a factory class from a {@linkplain javax.naming.Reference#getFactoryClassLocation()\n * location} specified in the reference can be supported by a custom implementation of {@link\n * javax.naming.spi.ObjectFactoryBuilder}. If a location is specified, then\n * unless an {@link javax.naming.spi.ObjectFactoryBuilder} is installed a\n * {@link javax.naming.ConfigurationException} is thrown.\n * @provides javax.naming.spi.InitialContextFactory\n * @moduleGraph\n * @since 9\n  [26:3]</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment">    |   `--BLOCK_COMMENT_END -&gt; */</em> [69:2]
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>      |--LITERAL_MODULE -&gt; module [70:1]
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>      |--DOT -&gt; . [70:18]
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>      |   |--DOT -&gt; . [70:11]
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>      |   |   |--IDENT -&gt; jdk [70:8]
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>      |   |   `--IDENT -&gt; naming [70:12]
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>      |   `--IDENT -&gt; rmi [70:19]
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>      `--DIRECTIVE_BLOCK -&gt; DIRECTIVE_BLOCK [70:23]
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>          |--LCURLY -&gt; { [70:23]
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>          |--REQUIRES -&gt; requires [71:5]
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>          |   |--DOT -&gt; . [71:18]
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>          |   |   |--IDENT -&gt; java [71:14]
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>          |   |   `--IDENT -&gt; naming [71:19]
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>          |   `--SEMI -&gt; ; [71:25]
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>          |--REQUIRES -&gt; requires [72:5]
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>          |   |--DOT -&gt; . [72:18]
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>          |   |   |--IDENT -&gt; java [72:14]
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>          |   |   `--IDENT -&gt; rmi [72:19]
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          |   `--SEMI -&gt; ; [72:22]
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>          |--SINGLE_LINE_COMMENT -&gt; <em class="jxr_comment">// [74:5]</em>
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>          |   `--COMMENT_CONTENT -&gt;  temporary export until NamingManager.getURLContext uses services\n [74:7]
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>          |--EXPORTS -&gt; exports [75:5]
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>          |   |--DOT -&gt; . [75:29]
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>          |   |   |--DOT -&gt; . [75:25]
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>          |   |   |   |--DOT -&gt; . [75:20]
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          |   |   |   |   |--DOT -&gt; . [75:16]
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          |   |   |   |   |   |--IDENT -&gt; com [75:13]
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          |   |   |   |   |   `--IDENT -&gt; sun [75:17]
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          |   |   |   |   `--IDENT -&gt; jndi [75:21]
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          |   |   |   `--IDENT -&gt; url [75:26]
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          |   |   `--IDENT -&gt; rmi [75:30]
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          |   |--TO -&gt; to [75:34]
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          |   |   `--DOT -&gt; . [75:41]
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>          |   |       |--IDENT -&gt; java [75:37]
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>          |   |       `--IDENT -&gt; naming [75:42]
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>          |   `--SEMI -&gt; ; [75:48]
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>          |--EXPORTS -&gt; exports [76:5]
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          |   |--DOT -&gt; . [76:29]
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          |   |   |--DOT -&gt; . [76:25]
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          |   |   |   |--DOT -&gt; . [76:20]
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>          |   |   |   |   |--DOT -&gt; . [76:16]
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          |   |   |   |   |   |--IDENT -&gt; com [76:13]
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>          |   |   |   |   |   `--IDENT -&gt; sun [76:17]
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          |   |   |   |   `--IDENT -&gt; jndi [76:21]
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          |   |   |   `--IDENT -&gt; rmi [76:26]
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>          |   |   `--IDENT -&gt; registry [76:30]
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          |   |--TO -&gt; to [76:39]
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          |   |   `--DOT -&gt; . [76:46]
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>          |   |       |--IDENT -&gt; java [76:42]
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          |   |       `--IDENT -&gt; rmi [76:47]
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          |   `--SEMI -&gt; ; [76:50]
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>          |--PROVIDES -&gt; provides [78:5]
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>          |   |--DOT -&gt; . [78:30]
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>          |   |   |--DOT -&gt; . [78:26]
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>          |   |   |   |--DOT -&gt; . [78:19]
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>          |   |   |   |   |--IDENT -&gt; javax [78:14]
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>          |   |   |   |   `--IDENT -&gt; naming [78:20]
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>          |   |   |   `--IDENT -&gt; spi [78:27]
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>          |   |   `--IDENT -&gt; InitialContextFactory [78:31]
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>          |   |--WITH -&gt; with [78:53]
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>          |   |   `--DOT -&gt; . [79:34]
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>          |   |       |--DOT -&gt; . [79:25]
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>          |   |       |   |--DOT -&gt; . [79:21]
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>          |   |       |   |   |--DOT -&gt; . [79:16]
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          |   |       |   |   |   |--DOT -&gt; . [79:12]
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          |   |       |   |   |   |   |--IDENT -&gt; com [79:9]
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>          |   |       |   |   |   |   `--IDENT -&gt; sun [79:13]
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>          |   |       |   |   |   `--IDENT -&gt; jndi [79:17]
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>          |   |       |   |   `--IDENT -&gt; rmi [79:22]
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>          |   |       |   `--IDENT -&gt; registry [79:26]
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>          |   |       `--IDENT -&gt; RegistryContextFactory [79:35]
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>          |   `--SEMI -&gt; ; [79:57]
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>          `--RCURLY -&gt; } [81:1]
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>

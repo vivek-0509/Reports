@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>module-info.tree xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   COMPILATION_UNIT -&gt; COMPILATION_UNIT [26:1]
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [1:1]</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment">|   |--COMMENT_CONTENT -&gt; \n * Copyright (c) 2015, 2024, Oracle and/or its affiliates. All rights reserved.\n * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.\n *\n * This code is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License version 2 only, as\n * published by the Free Software Foundation.  Oracle designates this\n * particular file as subject to the "Classpath" exception as provided\n * by Oracle in the LICENSE file that accompanied this code.\n *\n * This code is distributed in the hope that it will be useful, but WITHOUT\n * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License\n * version 2 for more details (a copy is included in the LICENSE file that\n * accompanied this code).\n *\n * You should have received a copy of the GNU General Public License version\n * 2 along with this work; if not, write to the Free Software Foundation,\n * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n *\n * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA\n * or visit www.oracle.com if you need additional information or have any\n * questions.\n  [1:3]</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment">|   `--BLOCK_COMMENT_END -&gt; */</em> [24:2]
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   |--IMPORT -&gt; <strong class="jxr_keyword">import</strong> [26:1]
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   |   |--DOT -&gt; . [26:28]
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   |   |   |--DOT -&gt; . [26:17]
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   |   |   |   |--DOT -&gt; . [26:12]
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   |   |   |   |   |--IDENT -&gt; java [26:8]
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  |   |   |   |   `--IDENT -&gt; lang [26:13]
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  |   |   |   `--IDENT -&gt; management [26:18]
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  |   |   `--IDENT -&gt; ManagementFactory [26:29]
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  |   `--SEMI -&gt; ; [26:46]
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  `--MODULE_DEF -&gt; MODULE_DEF [41:1]
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>      |--ANNOTATIONS -&gt; ANNOTATIONS [41:1]
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>      |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [28:1]</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_comment">    |   |--COMMENT_CONTENT -&gt; *\n * Defines JDK-specific management interfaces for the JVM.\n *\n * &lt;p&gt; This module contains the JDK's extensions to the standard implementation\n * of the {@link java.lang.management} API and also defines the management\n * interfaces for some other components of the platform.\n *\n * &lt;p&gt; All platform MBeans are registered in the &lt;em&gt;platform MBeanServer&lt;/em&gt;\n * which can be obtained with {@link ManagementFactory#getPlatformMBeanServer}.\n *\n * @moduleGraph\n * @since 9\n  [28:3]</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_comment">    |   `--BLOCK_COMMENT_END -&gt; */</em> [40:2]
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>      |--LITERAL_MODULE -&gt; module [41:1]
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>      |--DOT -&gt; . [41:11]
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>      |   |--IDENT -&gt; jdk [41:8]
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>      |   `--IDENT -&gt; management [41:12]
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>      `--DIRECTIVE_BLOCK -&gt; DIRECTIVE_BLOCK [41:23]
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>          |--LCURLY -&gt; { [41:23]
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>          |--REQUIRES -&gt; requires [42:5]
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>          |   |--LITERAL_TRANSITIVE -&gt; transitive [42:14]
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          |   |--DOT -&gt; . [42:29]
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>          |   |   |--IDENT -&gt; java [42:25]
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>          |   |   `--IDENT -&gt; management [42:30]
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>          |   `--SEMI -&gt; ; [42:40]
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>          |--EXPORTS -&gt; exports [44:5]
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>          |   |--DOT -&gt; . [44:20]
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>          |   |   |--DOT -&gt; . [44:16]
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          |   |   |   |--IDENT -&gt; com [44:13]
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          |   |   |   `--IDENT -&gt; sun [44:17]
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          |   |   `--IDENT -&gt; management [44:21]
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          |   `--SEMI -&gt; ; [44:31]
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          |--EXPORTS -&gt; exports [45:5]
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          |   |--DOT -&gt; . [45:16]
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          |   |   |--IDENT -&gt; jdk [45:13]
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          |   |   `--IDENT -&gt; management [45:17]
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>          |   `--SEMI -&gt; ; [45:27]
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>          |--PROVIDES -&gt; provides [47:5]
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>          |   |--DOT -&gt; . [47:32]
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>          |   |   |--DOT -&gt; . [47:28]
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          |   |   |   |--DOT -&gt; . [47:17]
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          |   |   |   |   |--IDENT -&gt; sun [47:14]
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          |   |   |   |   `--IDENT -&gt; management [47:18]
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>          |   |   |   `--IDENT -&gt; spi [47:29]
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          |   |   `--IDENT -&gt; PlatformMBeanProvider [47:33]
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>          |   |--WITH -&gt; with [47:55]
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          |   |   `--DOT -&gt; . [48:36]
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          |   |       |--DOT -&gt; . [48:27]
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>          |   |       |   |--DOT -&gt; . [48:16]
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          |   |       |   |   |--DOT -&gt; . [48:12]
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          |   |       |   |   |   |--IDENT -&gt; com [48:9]
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>          |   |       |   |   |   `--IDENT -&gt; sun [48:13]
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          |   |       |   |   `--IDENT -&gt; management [48:17]
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          |   |       |   `--IDENT -&gt; internal [48:28]
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>          |   |       `--IDENT -&gt; PlatformMBeanProviderImpl [48:37]
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>          |   `--SEMI -&gt; ; [48:62]
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>          `--RCURLY -&gt; } [49:1]
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>

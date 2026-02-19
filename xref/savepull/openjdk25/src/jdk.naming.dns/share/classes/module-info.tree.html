@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>module-info.tree xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   COMPILATION_UNIT -&gt; COMPILATION_UNIT [64:1]
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   `--MODULE_DEF -&gt; MODULE_DEF [64:1]
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>       |--ANNOTATIONS -&gt; ANNOTATIONS [64:1]
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>       |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [1:1]</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment">    |   |--COMMENT_CONTENT -&gt; \n * Copyright (c) 2014, 2019, Oracle and/or its affiliates. All rights reserved.\n * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.\n *\n * This code is free software; you can redistribute it and/or modify it\n * under the terms of the GNU General Public License version 2 only, as\n * published by the Free Software Foundation.  Oracle designates this\n * particular file as subject to the "Classpath" exception as provided\n * by Oracle in the LICENSE file that accompanied this code.\n *\n * This code is distributed in the hope that it will be useful, but WITHOUT\n * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License\n * version 2 for more details (a copy is included in the LICENSE file that\n * accompanied this code).\n *\n * You should have received a copy of the GNU General Public License version\n * 2 along with this work; if not, write to the Free Software Foundation,\n * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n *\n * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA\n * or visit www.oracle.com if you need additional information or have any\n * questions.\n  [1:3]</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_comment">    |   `--BLOCK_COMMENT_END -&gt; */</em> [24:2]
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>       |--BLOCK_COMMENT_BEGIN -&gt; <em class="jxr_comment">/* [26:1]</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_comment">    |   |--COMMENT_CONTENT -&gt; *\n * Provides the implementation of the DNS Java Naming provider.\n *\n * &lt;h2&gt;Environment Properties&lt;/h2&gt;\n *\n * &lt;p&gt; The following JNDI environment properties may be used when creating\n * the initial context.\n *\n * &lt;ul&gt;\n *    &lt;li&gt;com.sun.jndi.dns.timeout.initial&lt;/li&gt;\n *    &lt;li&gt;com.sun.jndi.dns.timeout.retries&lt;/li&gt;\n *  &lt;/ul&gt;\n *\n * &lt;p&gt; These properties are used to alter the timeout-related defaults that the\n * DNS provider uses when submitting queries. The DNS provider submits queries\n * using the following exponential backoff algorithm. The provider submits a\n * query to a DNS server and waits for a response to arrive within a timeout\n * period (1 second by default). If it receives no response within the timeout\n * period, it queries the next server, and so on. If the provider receives no\n * response from any server, it doubles the timeout period and repeats the\n * process of submitting the query to each server, up to a maximum number of\n * retries (4 by default).\n *\n * &lt;p&gt; The {@code com.sun.jndi.dns.timeout.initial} property, if set, specifies\n * the number of milliseconds to use as the initial timeout period (i.e., before\n * any doubling). If this property has not been set, the default initial timeout\n * is 1000 milliseconds.\n *\n * &lt;p&gt; The {@code com.sun.jndi.dns.timeout.retries} property, if set, specifies\n * the number of times to retry each server using the exponential backoff\n * algorithm described previously. If this property has not been set, the\n * default number of retries is 4.\n *\n * @provides javax.naming.spi.InitialContextFactory\n *\n * @moduleGraph\n * @since 9\n  [26:3]</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment">    |   `--BLOCK_COMMENT_END -&gt; */</em> [63:2]
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>      |--LITERAL_MODULE -&gt; module [64:1]
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>      |--DOT -&gt; . [64:18]
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>      |   |--DOT -&gt; . [64:11]
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>      |   |   |--IDENT -&gt; jdk [64:8]
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>      |   |   `--IDENT -&gt; naming [64:12]
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>      |   `--IDENT -&gt; dns [64:19]
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>      `--DIRECTIVE_BLOCK -&gt; DIRECTIVE_BLOCK [64:23]
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>          |--LCURLY -&gt; { [64:23]
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>          |--REQUIRES -&gt; requires [65:5]
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>          |   |--DOT -&gt; . [65:18]
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>          |   |   |--IDENT -&gt; java [65:14]
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>          |   |   `--IDENT -&gt; naming [65:19]
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>          |   `--SEMI -&gt; ; [65:25]
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>          |--SINGLE_LINE_COMMENT -&gt; <em class="jxr_comment">// [67:5]</em>
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>          |   `--COMMENT_CONTENT -&gt;  temporary export until NamingManager.getURLContext uses services\n [67:7]
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>          |--EXPORTS -&gt; exports [68:5]
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>          |   |--DOT -&gt; . [68:29]
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          |   |   |--DOT -&gt; . [68:25]
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>          |   |   |   |--DOT -&gt; . [68:20]
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>          |   |   |   |   |--DOT -&gt; . [68:16]
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>          |   |   |   |   |   |--IDENT -&gt; com [68:13]
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>          |   |   |   |   |   `--IDENT -&gt; sun [68:17]
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>          |   |   |   |   `--IDENT -&gt; jndi [68:21]
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>          |   |   |   `--IDENT -&gt; url [68:26]
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          |   |   `--IDENT -&gt; dns [68:30]
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          |   |--TO -&gt; to [68:34]
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          |   |   `--DOT -&gt; . [68:41]
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          |   |       |--IDENT -&gt; java [68:37]
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          |   |       `--IDENT -&gt; naming [68:42]
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          |   `--SEMI -&gt; ; [68:48]
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          |--PROVIDES -&gt; provides [70:5]
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          |   |--DOT -&gt; . [70:30]
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>          |   |   |--DOT -&gt; . [70:26]
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>          |   |   |   |--DOT -&gt; . [70:19]
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>          |   |   |   |   |--IDENT -&gt; javax [70:14]
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>          |   |   |   |   `--IDENT -&gt; naming [70:20]
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          |   |   |   `--IDENT -&gt; spi [70:27]
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          |   |   `--IDENT -&gt; InitialContextFactory [70:31]
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          |   |--WITH -&gt; with [70:53]
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>          |   |   `--DOT -&gt; . [71:25]
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          |   |       |--DOT -&gt; . [71:21]
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>          |   |       |   |--DOT -&gt; . [71:16]
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          |   |       |   |   |--DOT -&gt; . [71:12]
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          |   |       |   |   |   |--IDENT -&gt; com [71:9]
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>          |   |       |   |   |   `--IDENT -&gt; sun [71:13]
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          |   |       |   |   `--IDENT -&gt; jndi [71:17]
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          |   |       |   `--IDENT -&gt; dns [71:22]
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>          |   |       `--IDENT -&gt; DnsContextFactory [71:26]
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          |   `--SEMI -&gt; ; [71:43]
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          `--RCURLY -&gt; } [72:1]
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>
